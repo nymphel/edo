@@ -17,7 +17,7 @@ public class HelloWorld {
 
 				return new ModelAndView(model, "hello.vm");
 			}, new VelocityTemplateEngine());
-
+ 
 	}
 
 	public static class Person {
