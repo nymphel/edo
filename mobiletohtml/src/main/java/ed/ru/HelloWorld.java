@@ -9,13 +9,14 @@ import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
 public class HelloWorld {
+	
 	public static void main(String[] args) {
 		get("/hello", (request, response) -> {
 			Map<String, Object> model = new HashMap<>();
-			model.put("hello", "Velocity World");
-			model.put("person", new Person("Foobar"));
+			model.put("name", "surname");
+			model.put("person", new Person("Heisenberg"));
 
-				return new ModelAndView(model, "hello.vm");
+				return new ModelAndView(model, "/input/input.vm");
 			}, new VelocityTemplateEngine());
  
 	}
