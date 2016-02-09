@@ -1,5 +1,5 @@
 <input type="${type}" 
-#foreach( $attribute in $attributes )
-    $attribute.Name="$attribute.Value"
+#foreach( $key in $attributes.keySet() )
+    $key ="$attributes.get($key)"
 #end
 >
