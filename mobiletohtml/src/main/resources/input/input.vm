@@ -1,1 +1,5 @@
-<input type="text" name="${name}" value="${person.Name}">
+<input type="${type}" 
+#foreach( $attribute in $attributes )
+    $attribute.Name="$attribute.Value"
+#end
+>
