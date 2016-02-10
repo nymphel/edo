@@ -20,6 +20,9 @@ import spark.template.velocity.VelocityTemplateEngine;
 public class HelloWorld {
 
 	public static void main(String[] args) {
+		
+		spark.Spark.staticFileLocation("/public");
+		
 		get("/hello", (request, response) -> {
 			
 			Map<String, Object> model = new HashMap<>();
