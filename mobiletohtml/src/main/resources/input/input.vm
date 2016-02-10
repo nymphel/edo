@@ -1,5 +1,5 @@
 <input type="${type}" 
-#foreach( $key in $attributes.keySet() )
-    $key ="$attributes.get($key)"
+#foreach( $key in $element.Attributes.keySet() )
+    $key ="$element.Attributes.get($key)"
 #end
 >
